@@ -1,0 +1,16 @@
+# data — feeds are placed locally; raw pulls and large intermediates never committed
+data/feeds/*
+!data/feeds/README.md
+data/raw/
+# generated outputs (regenerate with scripts/run_all.py); keep folder placeholders
+figures/*
+!figures/README.md
+tables/*
+!tables/README.md
+# secrets
+.env
+# python
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/

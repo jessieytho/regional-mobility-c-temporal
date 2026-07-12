@@ -1,0 +1,16 @@
+# Runtime dependencies actually exercised by the pipeline.
+#
+# The Bai-Perron multiple-break estimator (DP least-squares partition + BIC + moving-
+# block bootstrap) and the classical seasonal-trend decomposition are implemented from
+# scratch in numpy (scripts/t2_breaks.py, scripts/05_fig5_decomposition.py). statsmodels
+# and ruptures are therefore NOT dependencies and are intentionally absent -- matching the
+# paper's Data & Code Availability statement.
+#
+# Authoritative pins should be regenerated with `pip freeze > requirements.lock.txt` in a
+# clean venv on the build machine; the pins below are the confirmed direct set.
+
+pandas==2.2.2
+numpy==1.26.4
+matplotlib==3.9.0
+scikit-learn==1.5.1   # PCA + StandardScaler in scripts/explore_findings.py
+scipy==1.13.1         # pulled in by scikit-learn; pinned for a reproducible resolve

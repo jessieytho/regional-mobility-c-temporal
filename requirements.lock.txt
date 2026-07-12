@@ -1,0 +1,22 @@
+# requirements.lock.txt — SCAFFOLD (regenerate authoritatively on the build machine)
+#
+# Direct dependencies are pinned in requirements.txt. A true lock (with transitive pins)
+# must be produced in a clean environment, because transitive versions depend on the
+# Python version and platform and cannot be resolved offline. Generate it with EITHER:
+#
+#   python -m venv .venv && . .venv/bin/activate
+#   pip install -r requirements.txt
+#   pip freeze > requirements.lock.txt
+#
+# or, preferred (hash-pinned, reproducible resolves):
+#   pip install pip-tools && pip-compile --generate-hashes -o requirements.lock.txt requirements.txt
+#
+# Direct set (floor — the confirmed, exercised imports):
+pandas==2.2.2
+numpy==1.26.4
+matplotlib==3.9.0
+scikit-learn==1.5.1
+scipy==1.13.1
+# Transitive pins (joblib, threadpoolctl, python-dateutil, pytz, tzdata, pyparsing,
+# cycler, fonttools, kiwisolver, packaging, pillow, contourpy, six) to be filled by the
+# freeze/compile step above.
