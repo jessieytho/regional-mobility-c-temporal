@@ -5,11 +5,11 @@ type: software
 authors:
   - given-names: "Jessie"
     family-names: "Ho"
+doi: "10.5281/zenodo.21328969"
+repository-code: "https://github.com/jessieytho/regional-mobility-c-temporal"
 keywords:
   - public transit
   - COVID-19 recovery
   - travel behavior
   - New York
 license: MIT
-# On release, connect the GitHub repo to Zenodo to mint a DOI, then add it here
-# and cite that DOI from the manuscript in place of the (barred) appendix.
